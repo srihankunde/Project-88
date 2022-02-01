@@ -22,7 +22,7 @@ canvas.add(hole_obj);
     });
 	new_image();
 }
-	new_image();
+	
 
 
 
@@ -99,10 +99,10 @@ function my_keydown(e)
 
 	function down()
 	{
-		if(ball_y<=450)
+		if(ball_y<=400)
 		{
 
-          ball_y=ball_y-block_image_height;
+          ball_y=ball_y+block_image_height;
 		  console.log("block_image_height="+block_image_height);
 		  console.log("when down arrow is pressed, X="+ball_x+",Y="+ball_y);
 		  canvas.remove(ball_obj);
@@ -133,7 +133,7 @@ function my_keydown(e)
 	{
 		if(ball_x <=1050)
 		{
-			ball_x=ball_x-block_image_width;
+			ball_x=ball_x+block_image_width;
 			  console.log("block_image_width="+block_image_width);
 			  console.log("when right arrow is pressed, X="+ball_x+",Y="+ball_y);
 			  canvas.remove(ball_obj);
